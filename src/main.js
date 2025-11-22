@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl w-full mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <!-- Header -->
-        <div class="text-white p-6" style="background: linear-gradient(to right, #2563eb, #1e40af);">
+        <div class="text-white min-h-16 flex items-center justify-center" style="background: linear-gradient(to right, #2563eb, #1e40af);">
           <h1 class="text-3xl font-bold text-center">HỢP ĐỒNG THIẾT KẾ WEBSITE</h1>
         </div>
 
@@ -401,6 +401,23 @@ async function saveContract() {
 
   if (!signatureCanvas) {
     alert("Không tìm thấy canvas chữ ký!");
+    return;
+  }
+
+  // Kiểm tra thông tin bên B (người thuê) đã nhập đầy đủ chưa
+  const clientName = document.getElementById("client-name")?.value.trim();
+  const clientAddress = document.getElementById("client-address")?.value.trim();
+  const clientPhone = document.getElementById("client-phone")?.value.trim();
+
+  if (!clientName || !clientAddress || !clientPhone) {
+    let missingFields = [];
+    if (!clientName) missingFields.push("Họ và tên/Công ty");
+    if (!clientAddress) missingFields.push("Địa chỉ");
+    if (!clientPhone) missingFields.push("Điện thoại");
+
+    alert(
+      `Vui lòng nhập đầy đủ thông tin bên B:\n- ${missingFields.join("\n- ")}`
+    );
     return;
   }
 
