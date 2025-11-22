@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>Trang danh sách phòng và chi tiết phòng</li>
                 <li>Trang admin quản trị dữ liệu</li>
                 <li>Hỗ trợ SEO cơ bản (meta tags, ...)</li>
+                <li>Chức năng tìm kiếm và lọc phòng phù hợp</li>
                 <li>Bàn giao website và hướng dẫn sử dụng</li>
               </ol>
             </div>
@@ -532,7 +533,7 @@ async function saveContract() {
           const clonedClearBtn = clonedDoc.getElementById("clear-signature");
           if (clonedConfirmBtn) clonedConfirmBtn.style.display = "none";
           if (clonedClearBtn) clonedClearBtn.style.display = "none";
-          
+
           // Đảm bảo canvas được render đúng
           const clonedCanvasA = clonedDoc.getElementById("signature-canvas-a");
           const clonedCanvasB = clonedDoc.getElementById("signature-canvas");
@@ -549,7 +550,7 @@ async function saveContract() {
       const dateStr = new Date().toISOString().split("T")[0];
       const filename = `hop-dong-thiet-ke-website-${dateStr}.png`;
       const dataUrl = canvas.toDataURL("image/png", 1.0);
-      
+
       // Phương pháp 1: Sử dụng link download (chuẩn)
       try {
         const link = document.createElement("a");
@@ -558,16 +559,16 @@ async function saveContract() {
         link.style.display = "none";
         document.body.appendChild(link);
         link.click();
-        
+
         // Đợi một chút trước khi xóa
         setTimeout(() => {
           document.body.removeChild(link);
         }, 100);
-        
+
         alert("Đã lưu hợp đồng thành công!");
       } catch (error) {
         console.error("Lỗi khi tải xuống:", error);
-        
+
         // Phương pháp 2: Fallback - mở trong tab mới và cho phép save manually
         try {
           const newWindow = window.open();
@@ -576,13 +577,15 @@ async function saveContract() {
               `<img src="${dataUrl}" style="max-width: 100%; height: auto;" />`
             );
             newWindow.document.title = filename;
-            alert("Đã mở hợp đồng trong tab mới. Vui lòng nhấn chuột phải và chọn 'Lưu hình ảnh' để lưu.");
+            alert(
+              "Đã mở hợp đồng trong tab mới. Vui lòng nhấn chuột phải và chọn 'Lưu hình ảnh' để lưu."
+            );
           } else {
             throw new Error("Không thể mở tab mới");
           }
         } catch (fallbackError) {
           console.error("Lỗi fallback:", fallbackError);
-          
+
           // Phương pháp 3: Copy vào clipboard (nếu hỗ trợ)
           if (navigator.clipboard && navigator.clipboard.write) {
             try {
@@ -592,7 +595,9 @@ async function saveContract() {
               await navigator.clipboard.write([
                 new ClipboardItem({ "image/png": blob }),
               ]);
-              alert("Đã copy hợp đồng vào clipboard! Vui lòng dán vào ứng dụng khác để lưu.");
+              alert(
+                "Đã copy hợp đồng vào clipboard! Vui lòng dán vào ứng dụng khác để lưu."
+              );
             } catch (clipboardError) {
               console.error("Lỗi clipboard:", clipboardError);
               alert(
