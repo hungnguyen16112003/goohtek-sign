@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="space-y-2 text-gray-700">
               <p><strong>Lĩnh vực:</strong> Website Khách Sạn</p>
               <p><strong>Loại website:</strong> Website giới thiệu và đặt phòng khách sạn</p>
-              <p><strong>Thời gian thực hiện:</strong> 2 - 5 ngày khi hợp đồng bắt đầu có hiệu lực</p>
+              <p><strong>Thời gian thực hiện:</strong> 3 - 10 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
             </div>
           </section>
 
@@ -58,14 +58,49 @@ document.addEventListener("DOMContentLoaded", () => {
               ĐIỀU KHOẢN THANH TOÁN
             </h2>
             <div class="space-y-3 text-gray-700">
-              <div class="bg-blue-50 p-4 rounded-lg">
-                <p class="font-semibold text-lg text-blue-800">Tổng giá trị hợp đồng: <span class="text-2xl text-blue-600">2.200.000 VNĐ</span></p>
+              <div class="bg-blue-50 p-4 rounded-lg space-y-1">
+                <p class="font-semibold text-lg text-blue-800">
+                  Giá thiết kế web:
+                  <span class="text-2xl text-blue-600">2.900.000 VNĐ</span>
+                  <span class="text-sm text-gray-700">(thanh toán 1 lần duy nhất cho gói thiết kế)</span>
+                </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
-                <li><strong>Đặt cọc:</strong> 20% = <strong class="text-blue-600">440.000 VNĐ</strong> (Thanh toán khi ký hợp đồng - nhận được demo dự án)</li>
-                <li><strong>Thanh toán lần 2:</strong> 40% = <strong class="text-blue-600">880.000 VNĐ</strong> (Khi hoàn thành thiết kế giao diện)</li>
-                <li><strong>Thanh toán lần 3:</strong> 40% = <strong class="text-blue-600">880.000 VNĐ</strong> (Khi bàn giao website hoàn chỉnh)</li>
+                <li>
+                  <strong>Đặt cọc 20%:</strong>
+                  Bên B thanh toán <strong class="text-blue-600">580.000 VNĐ</strong> (20% của 2.900.000 VNĐ)
+                  khi hợp đồng bắt đầu có hiệu lực.
+                </li>
+                <li>
+                  <strong>Thanh toán 30%:</strong>
+                  Sau khi giao diện website và dữ liệu trên web đã được xử lý đầy đủ theo nội dung Bên B cung cấp,
+                  Bên B thanh toán thêm <strong class="text-blue-600">870.000 VNĐ</strong> (30% của 2.900.000 VNĐ).
+                </li>
+                <li>
+                  <strong>Thanh toán 50% còn lại:</strong>
+                  Khi dự án hoàn thành và website được bàn giao đúng theo thỏa thuận,
+                  Bên B thanh toán <strong class="text-blue-600">1.450.000 VNĐ</strong> (50% còn lại của 2.900.000 VNĐ).
+                </li>
               </ol>
+              <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
+                <li><strong>Phí duy trì tính theo tháng:</strong> 190.000 VNĐ / tháng</li>
+                <li>
+                  <strong>Phí duy trì theo năm (giá gốc):</strong>
+                  1.900.000 VNĐ / năm
+                  <span class="text-sm text-gray-500">
+                    (Năm thứ 1 sau khi trừ 6 tháng tặng: 1.140.000 VNĐ)
+                  </span>
+                </li>
+                <li><strong>Phí duy trì năm thứ 2:</strong> 1.700.000 VNĐ / năm</li>
+                <li><strong>Phí duy trì năm thứ 3:</strong> 1.500.000 VNĐ / năm</li>
+                <li>
+                  <strong>Tặng kèm:</strong>
+                  Tên miền .com / Hosting / SSL / Bảo trì kỹ thuật
+                  <span class="text-sm text-gray-700">
+                    (đã bao gồm trong phí duy trì, không phát sinh thêm)
+                  </span>
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -76,13 +111,42 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <div class="space-y-2 text-gray-700">
               <ol class="list-decimal list-inside space-y-2 ml-4">
-                <li>Thiết kế giao diện website responsive (tương thích mobile, tablet, desktop)</li>
-                <li>Xây dựng trang chủ với banner, giới thiệu, dịch vụ</li>
-                <li>Trang danh sách phòng và chi tiết phòng</li>
-                <li>Trang admin quản trị dữ liệu</li>
-                <li>Hỗ trợ SEO cơ bản (meta tags, ...)</li>
-                <li>Chức năng tìm kiếm và lọc phòng phù hợp</li>
-                <li>Bàn giao website và hướng dẫn sử dụng</li>
+                <li>
+                  <strong>Trang chủ:</strong>
+                  Giới thiệu khách sạn, hình ảnh, video, tiện ích nổi bật; nút liên hệ nhanh (Zalo / Facebook / Hotline).
+                </li>
+                <li>
+                  <strong>Danh sách phòng:</strong>
+                  Hiển thị loại phòng (ảnh, giá, tiện nghi); bộ lọc nhanh (giá, số người, loại phòng).
+                </li>
+                <li>
+                  <strong>Trang chi tiết phòng:</strong>
+                  Gallery ảnh lớn, mô tả chi tiết, diện tích, giá, chính sách nhận – trả phòng; nút "Liên hệ đặt phòng".
+                </li>
+                <li>
+                  <strong>Form đặt phòng nhanh:</strong>
+                  Họ tên, SĐT, ngày nhận – trả, số người, loại phòng; gửi thông tin về trang admin.
+                </li>
+                <li>
+                  <strong>Trang dịch vụ:</strong>
+                  Nhà hàng, hồ bơi, spa, đưa đón sân bay, dịch vụ bổ sung (nếu khách sạn có).
+                </li>
+                <li>
+                  <strong>Trang liên hệ:</strong>
+                  Form liên hệ, bản đồ Google Maps, nút hotline.
+                </li>
+                <li>
+                  <strong>Khuyến mãi &amp; Blog (tuỳ chọn):</strong>
+                  Trang tin tức / bài viết giúp tăng SEO.
+                </li>
+                <li>
+                  <strong>Đánh giá khách hàng:</strong>
+                  Hiển thị đánh giá từ Google / Facebook.
+                </li>
+                <li>
+                  <strong>Trang quản trị (Admin):</strong>
+                  Quản lý phòng (thêm/sửa/xoá), quản lý giá &amp; tình trạng phòng, quản lý hình ảnh, xử lý yêu cầu đặt phòng.
+                </li>
               </ol>
             </div>
           </section>
@@ -98,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ul class="list-disc list-inside space-y-1 ml-4">
                   <li>Thực hiện đúng và đầy đủ các công việc đã cam kết trong hợp đồng</li>
                   <li>Bàn giao website đúng thời hạn và chất lượng</li>
-                  <li>Hỗ trợ kỹ thuật trong 6 tháng đầu sau khi bàn giao</li>
+                  <li>Hỗ trợ kỹ thuật trong suốt thời gian Bên B sử dụng dịch vụ của Bên A</li>
                   <li>Cung cấp tài liệu hoặc hướng dẫn sử dụng</li>
                 </ul>
               </div>
@@ -131,14 +195,18 @@ document.addEventListener("DOMContentLoaded", () => {
           </section>
 
           <!-- Chữ ký -->
-          <section class="mt-8 pt-6 border-t-2 border-gray-300">
+          <section class="mt-8 pt-6 border-t-2 border-gray-300 ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 class="font-bold text-gray-800 mb-4">BÊN A (BÊN THIẾT KẾ)</h3>
                 <div class="mt-4">
                   <label class="block text-sm font-medium text-gray-700 mb-2">Chữ ký của Bên A:</label>
-                  <div class="border-2 border-gray-300 rounded-lg bg-white">
-                    <canvas id="signature-canvas-a" class="w-full" style="min-height: 150px;"></canvas>
+                  <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden">
+                    <img
+                      src="/chu-ky-ten-hung-funky-signature-ttf.jpeg"
+                      alt="Chữ ký Nguyễn Quốc Hưng"
+                      class="w-full h-40 object-cover mx-auto"
+                    />
                   </div>
                   <p class="text-center font-semibold border-t-2 border-gray-400 pt-2 mt-4">Nguyễn Quốc Hưng</p>
                 </div>
@@ -147,17 +215,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3 class="font-bold text-gray-800 mb-4">BÊN B (BÊN THUÊ)</h3>
                 <div class="mt-4">
                   <label class="block text-sm font-medium text-gray-700 mb-2">Ký tên của Bên B:</label>
-                  <div class="border-2 border-gray-300 rounded-lg bg-white">
-                    <canvas id="signature-canvas" class="w-full cursor-crosshair touch-none" style="min-height: 150px;"></canvas>
+                  <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden">
+                    <canvas
+                      id="signature-canvas"
+                      class="w-full h-40 cursor-crosshair touch-none"
+                    ></canvas>
                   </div>
-                  <p id="client-signature-name" class="text-center font-semibold border-t-2 border-gray-400 pt-2 mt-4">Đại diện Bên B</p>
+                  <p
+                    id="client-signature-name"
+                    class="text-center font-semibold border-t-2 border-gray-400 pt-2 mt-4"
+                  >
+                    Đại diện Bên B
+                  </p>
                 </div>
               </div>
             </div>
           </section>
 
           <!-- Nút điều khiển -->
-          <div class="mt-16 mb-8 pb-8 px-4 sm:px-6 flex justify-center gap-4 flex-wrap">
+          <div class=" !pt-10 !py-7 px-4 sm:px-6 flex justify-center gap-4 flex-wrap">
             <button id="clear-signature" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white border-2 border-red-300 text-red-600 font-medium rounded-lg hover:bg-red-50 hover:border-red-400 active:scale-95 transition-all duration-200 shadow-sm hover:shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
