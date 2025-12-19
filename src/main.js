@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="space-y-2 text-gray-700">
               <p><strong>Lĩnh vực:</strong> Website Khách Sạn</p>
               <p><strong>Loại website:</strong> Website giới thiệu và đặt phòng khách sạn</p>
-              <p><strong>Thời gian thực hiện:</strong> 3 - 10 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
+              <p><strong>Thời gian thực hiện:</strong> 3 - 7 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
             </div>
           </section>
 
@@ -72,27 +72,22 @@ document.addEventListener("DOMContentLoaded", () => {
                   khi hợp đồng bắt đầu có hiệu lực.
                 </li>
                 <li>
-                  <strong>Thanh toán 30%:</strong>
-                  Sau khi giao diện website và dữ liệu trên web đã được xử lý đầy đủ theo nội dung Bên B cung cấp,
-                  Bên B thanh toán thêm <strong class="text-blue-600">870.000 VNĐ</strong> (30% của 2.900.000 VNĐ).
-                </li>
-                <li>
-                  <strong>Thanh toán 50% còn lại:</strong>
+                  <strong>Thanh toán phần còn lại:</strong>
                   Khi dự án hoàn thành và website được bàn giao đúng theo thỏa thuận,
-                  Bên B thanh toán <strong class="text-blue-600">1.450.000 VNĐ</strong> (50% còn lại của 2.900.000 VNĐ).
+                  Bên B thanh toán <strong class="text-blue-600">2.320.000 VNĐ</strong> (80% còn lại của 2.900.000 VNĐ).
                 </li>
               </ol>
               <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
-                <li><strong>Phí duy trì tính theo tháng:</strong> 190.000 VNĐ / tháng</li>
+                <li><strong>Phí duy trì tính theo tháng:</strong> 290.000 VNĐ / tháng</li>
                 <li>
                   <strong>Phí duy trì theo năm (giá gốc):</strong>
-                  1.900.000 VNĐ / năm
+                  3.480.000 VNĐ / năm
                   <span class="text-sm text-gray-500">
-                    (Năm thứ 1 sau khi trừ 6 tháng tặng: 1.140.000 VNĐ)
+                    (Năm thứ 1 sau khi trừ 6 tháng tặng: 1.740.000 VNĐ)
                   </span>
                 </li>
-                <li><strong>Phí duy trì năm thứ 2:</strong> 1.700.000 VNĐ / năm</li>
-                <li><strong>Phí duy trì năm thứ 3:</strong> 1.500.000 VNĐ / năm</li>
+                <li><strong>Phí duy trì năm thứ 2:</strong> 3.180.000 VNĐ / năm</li>
+                <li><strong>Phí duy trì năm thứ 3:</strong> 2.880.000 VNĐ / năm</li>
                 <li>
                   <strong>Tặng kèm:</strong>
                   Tên miền .com / Hosting / SSL / Bảo trì kỹ thuật
@@ -185,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <div class="space-y-2 text-gray-700">
               <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Hợp đồng này có hiệu lực kể từ ngày ký và có giá trị cho đến khi hoàn thành dự án</li>
+                <li>Hợp đồng này có hiệu lực 3 năm từ ngày ký và có thể gia hạn hợp đồng sau 3 năm, giá thay đổi không vượt quá 50% giá ban đầu</li>
                 <li>Mọi thay đổi về thiết kế hoặc tính năng ngoài phạm vi ban đầu có thể tính thêm phí bổ sung và thời gian bàn giao</li>
                 <li>Bên A giữ bản quyền thiết kế cho đến khi Bên B thanh toán đầy đủ</li>
                 <li>Mọi tranh chấp sẽ được giải quyết thông qua thương lượng, nếu không sẽ đưa ra Tòa án có thẩm quyền</li>
