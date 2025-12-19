@@ -643,60 +643,141 @@ async function saveContract() {
       const filename = `hop-dong-thiet-ke-website-${dateStr}.png`;
       const dataUrl = canvas.toDataURL("image/png", 1.0);
 
-      // Phương pháp 1: Sử dụng link download (chuẩn)
-      try {
-        const link = document.createElement("a");
-        link.download = filename;
-        link.href = dataUrl;
-        link.style.display = "none";
-        document.body.appendChild(link);
-        link.click();
+      // Phát hiện iOS
+      const isIOS =
+        /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 
-        // Đợi một chút trước khi xóa
-        setTimeout(() => {
-          document.body.removeChild(link);
-        }, 100);
-
-        alert("Đã lưu hợp đồng thành công!");
-      } catch (error) {
-        console.error("Lỗi khi tải xuống:", error);
-
-        // Phương pháp 2: Fallback - mở trong tab mới và cho phép save manually
+      if (isIOS) {
+        // Trên iOS: Sử dụng phương pháp hiển thị ảnh và hướng dẫn lưu
         try {
-          const newWindow = window.open();
-          if (newWindow) {
-            newWindow.document.write(
-              `<img src="${dataUrl}" style="max-width: 100%; height: auto;" />`
-            );
-            newWindow.document.title = filename;
-            alert(
-              "Đã mở hợp đồng trong tab mới. Vui lòng nhấn chuột phải và chọn 'Lưu hình ảnh' để lưu."
-            );
-          } else {
-            throw new Error("Không thể mở tab mới");
-          }
-        } catch (fallbackError) {
-          console.error("Lỗi fallback:", fallbackError);
+          // Tạo blob từ canvas
+          const blob = await new Promise((resolve) => {
+            canvas.toBlob(resolve, "image/png", 1.0);
+          });
 
-          // Phương pháp 3: Copy vào clipboard (nếu hỗ trợ)
-          if (navigator.clipboard && navigator.clipboard.write) {
-            try {
-              const blob = await new Promise((resolve) => {
-                canvas.toBlob(resolve, "image/png");
-              });
-              await navigator.clipboard.write([
-                new ClipboardItem({ "image/png": blob }),
-              ]);
-              alert(
-                "Đã copy hợp đồng vào clipboard! Vui lòng dán vào ứng dụng khác để lưu."
-              );
-            } catch (clipboardError) {
-              console.error("Lỗi clipboard:", clipboardError);
-              alert(
-                "Không thể tự động lưu. Vui lòng chụp màn hình hoặc liên hệ hỗ trợ."
-              );
+          // Tạo URL object từ blob
+          const blobUrl = URL.createObjectURL(blob);
+
+          // Tạo một div overlay để hiển thị ảnh và hướng dẫn
+          const overlay = document.createElement("div");
+          overlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+          `;
+
+          const img = document.createElement("img");
+          img.src = blobUrl;
+          img.style.cssText = `
+            max-width: 100%;
+            max-height: 80%;
+            object-fit: contain;
+            border: 2px solid white;
+            border-radius: 8px;
+          `;
+
+          const instruction = document.createElement("div");
+          instruction.style.cssText = `
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 0 20px;
+          `;
+          instruction.innerHTML = `
+            <p style="margin-bottom: 10px;"><strong>Nhấn giữ vào ảnh và chọn "Lưu vào Ảnh"</strong></p>
+            <p style="font-size: 14px; opacity: 0.8;">Hoặc nhấn vào nút bên dưới để đóng</p>
+          `;
+
+          const closeBtn = document.createElement("button");
+          closeBtn.textContent = "Đóng";
+          closeBtn.style.cssText = `
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+          `;
+          closeBtn.onclick = () => {
+            document.body.removeChild(overlay);
+            URL.revokeObjectURL(blobUrl);
+          };
+
+          overlay.appendChild(img);
+          overlay.appendChild(instruction);
+          overlay.appendChild(closeBtn);
+          document.body.appendChild(overlay);
+
+          // Đóng khi click vào overlay (ngoài ảnh)
+          overlay.onclick = (e) => {
+            if (e.target === overlay) {
+              document.body.removeChild(overlay);
+              URL.revokeObjectURL(blobUrl);
             }
-          } else {
+          };
+        } catch (iosError) {
+          console.error("Lỗi trên iOS:", iosError);
+          // Fallback: Copy vào clipboard
+          try {
+            const blob = await new Promise((resolve) => {
+              canvas.toBlob(resolve, "image/png");
+            });
+            await navigator.clipboard.write([
+              new ClipboardItem({ "image/png": blob }),
+            ]);
+            alert(
+              "Đã copy hợp đồng vào clipboard! Vui lòng dán vào ứng dụng khác để lưu."
+            );
+          } catch (clipboardError) {
+            alert("Vui lòng chụp màn hình để lưu hợp đồng.");
+          }
+        }
+      } else {
+        // Trên các thiết bị khác: Sử dụng link download
+        try {
+          const link = document.createElement("a");
+          link.download = filename;
+          link.href = dataUrl;
+          link.style.display = "none";
+          document.body.appendChild(link);
+          link.click();
+
+          setTimeout(() => {
+            document.body.removeChild(link);
+          }, 100);
+
+          alert("Đã lưu hợp đồng thành công!");
+        } catch (error) {
+          console.error("Lỗi khi tải xuống:", error);
+          // Fallback: Mở trong tab mới
+          try {
+            const newWindow = window.open();
+            if (newWindow) {
+              newWindow.document.write(
+                `<img src="${dataUrl}" style="max-width: 100%; height: auto;" />`
+              );
+              newWindow.document.title = filename;
+              alert(
+                "Đã mở hợp đồng trong tab mới. Vui lòng nhấn chuột phải và chọn 'Lưu hình ảnh' để lưu."
+              );
+            } else {
+              throw new Error("Không thể mở tab mới");
+            }
+          } catch (fallbackError) {
+            console.error("Lỗi fallback:", fallbackError);
             alert(
               "Không thể tự động lưu. Vui lòng chụp màn hình hoặc liên hệ hỗ trợ."
             );
