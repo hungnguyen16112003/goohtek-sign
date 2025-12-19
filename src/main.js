@@ -142,6 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   <strong>Trang quản trị (Admin):</strong>
                   Quản lý phòng (thêm/sửa/xoá), quản lý giá &amp; tình trạng phòng, quản lý hình ảnh, xử lý yêu cầu đặt phòng.
                 </li>
+                <li>
+                  <strong>Hỗ trợ thiết kế logo miễn phí:</strong>
+                  Nếu Bên B cần, Bên A sẽ hỗ trợ thiết kế logo miễn phí.
+                </li>
               </ol>
             </div>
           </section>
