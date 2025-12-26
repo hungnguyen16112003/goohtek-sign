@@ -267,6 +267,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               </div>
             </div>
+            
+            <!-- Ngày ký dự án -->
+            <div class="!mt-6">
+              <p class="text-center text-gray-700">
+                <strong>Ngày ký dự án:</strong> 
+                <span id="contract-date" class="font-semibold">Chưa ký</span>
+              </p>
+            </div>
           </section>
 
           <!-- Nút điều khiển -->
@@ -537,6 +545,20 @@ async function saveContract() {
   if (!hasSignature()) {
     alert("Vui lòng ký tên trước khi xác nhận!");
     return;
+  }
+
+  // Cập nhật ngày ký dự án với thời gian hiện tại
+  const contractDateElement = document.getElementById("contract-date");
+  if (contractDateElement) {
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+
+    const formattedDate = `Ngày ${day} tháng ${month} năm ${year} lúc ${hours}:${minutes}`;
+    contractDateElement.textContent = formattedDate;
   }
 
   // Ẩn các nút điều khiển trước khi chụp
