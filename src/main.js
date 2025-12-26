@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
               BÊN B (BÊN THUÊ)
             </h2>
             <div class="space-y-2 text-gray-700">
-              <p><strong>Họ và tên/Công ty:</strong> <input type="text" id="client-name" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập tên khách hàng" /></p>
+              <p><strong>Họ và tên:</strong> <input type="text" id="client-name" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập tên khách hàng" /></p>
               <p><strong>Địa chỉ:</strong> <input type="text" id="client-address" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập địa chỉ" /></p>
               <p><strong>Điện thoại:</strong> <input type="text" id="client-phone" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập số điện thoại" /></p>
             </div>
@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
               THÔNG TIN DỰ ÁN
             </h2>
             <div class="space-y-2 text-gray-700">
-              <p><strong>Lĩnh vực:</strong> Website Khách Sạn</p>
-              <p><strong>Loại website:</strong> Website giới thiệu và đặt phòng khách sạn</p>
+              <p><strong>Lĩnh vực:</strong> Website Đào Tạo Bóng Đá</p>
+              <p><strong>Loại website:</strong> Website quản lý khóa học và học viên cho trung tâm đào tạo bóng đá SaiGon FC</p>
               <p><strong>Thời gian thực hiện:</strong> 3 - 7 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
             </div>
           </section>
@@ -78,22 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </li>
               </ol>
               <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
-                <li><strong>Phí duy trì tính theo tháng:</strong> 290.000 VNĐ / tháng</li>
-                <li>
-                  <strong>Phí duy trì theo năm (giá gốc):</strong>
-                  3.480.000 VNĐ / năm
-                  <span class="text-sm text-gray-500">
-                    (Năm thứ 1 sau khi trừ 6 tháng tặng: 1.740.000 VNĐ)
-                  </span>
-                </li>
-                <li><strong>Phí duy trì năm thứ 2:</strong> 3.180.000 VNĐ / năm</li>
-                <li><strong>Phí duy trì năm thứ 3:</strong> 2.880.000 VNĐ / năm</li>
+                <li><strong>Phí duy trì tính theo tháng:</strong> 350.000 VNĐ / tháng</li>
                 <li>
                   <strong>Tặng kèm:</strong>
-                  Tên miền .com / Hosting / SSL / Bảo trì kỹ thuật
-                  <span class="text-sm text-gray-700">
-                    (đã bao gồm trong phí duy trì, không phát sinh thêm)
-                  </span>
+                  Tên miền tùy chọn / Bảo mật SSL / Bảo trì kỹ thuật / Thiết kế logo miễn phí. Tặng thêm 3 tháng phí duy trì
+                
                 </li>
               </ul>
             </div>
@@ -105,46 +94,95 @@ document.addEventListener("DOMContentLoaded", () => {
               PHẠM VI CÔNG VIỆC
             </h2>
             <div class="space-y-2 text-gray-700">
+              <h3 class="font-semibold text-lg mt-4 mb-2">I. TRANG CHỦ</h3>
+              <ol class="list-decimal list-inside space-y-2 ml-4">
+                <li>Giới thiệu các khóa học hiện có của SaiGon FC (online và offline)</li>
+                <li>Giới thiệu về Coach, giáo án, liên hệ</li>
+                <li>Khi học viên chọn khóa học online thì sẽ hiện ra trang thanh toán</li>
+                <li>Học viên upload hình chuyển khoản, sau đó chờ Admin xác nhận để vào học</li>
+              </ol>
+
+              <h3 class="font-semibold text-lg mt-6 mb-2">II. CHỨC NĂNG CHO HỌC VIÊN</h3>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
+                  <strong>Đăng nhập/Đăng ký hệ thống:</strong>
+                  Học viên tự đăng ký tài khoản với tên riêng và avatar cá nhân. Đăng nhập bằng tài khoản đã tạo.
+                </li>
+                <li>
                   <strong>Trang chủ:</strong>
-                  Giới thiệu khách sạn, hình ảnh, video, tiện ích nổi bật; nút liên hệ nhanh (Zalo / Facebook / Hotline).
+                  Hiển thị thông tin "ĐIỂM DANH HÔM NAY" kèm slogan truyền động lực. Ở dưới là FAQ/Liên hệ và luật chơi.
                 </li>
                 <li>
-                  <strong>Danh sách phòng:</strong>
-                  Hiển thị loại phòng (ảnh, giá, tiện nghi); bộ lọc nhanh (giá, số người, loại phòng).
+                  <strong>Header với các mục:</strong>
+                  Bảng Xếp Hạng, Nhóm tập luyện, Khóa học, Hồ sơ cá nhân.
                 </li>
                 <li>
-                  <strong>Trang chi tiết phòng:</strong>
-                  Gallery ảnh lớn, mô tả chi tiết, diện tích, giá, chính sách nhận – trả phòng; nút "Liên hệ đặt phòng".
+                  <strong>Bảng Xếp Hạng:</strong>
+                  Hiển thị tên học viên, số buổi tập, chuỗi ngày tập liên tục. Mỗi học viên có thể xem hồ sơ của các học viên khác.
                 </li>
                 <li>
-                  <strong>Form đặt phòng nhanh:</strong>
-                  Họ tên, SĐT, ngày nhận – trả, số người, loại phòng; gửi thông tin về trang admin.
+                  <strong>Nhóm tập luyện (Chat chung):</strong>
+                  Chỉ Admin được đăng bài, các học viên khác chỉ có thể comment.
                 </li>
                 <li>
-                  <strong>Trang dịch vụ:</strong>
-                  Nhà hàng, hồ bơi, spa, đưa đón sân bay, dịch vụ bổ sung (nếu khách sạn có).
+                  <strong>Khóa học:</strong>
+                  Hiển thị những khóa học đã mua và ngày mua.
                 </li>
                 <li>
-                  <strong>Trang liên hệ:</strong>
-                  Form liên hệ, bản đồ Google Maps, nút hotline.
+                  <strong>Hồ sơ Học viên:</strong>
+                  Thành tích đạt được trên bảng xếp hạng, ngày điểm danh, huy hiệu được trao.
                 </li>
                 <li>
-                  <strong>Khuyến mãi &amp; Blog (tuỳ chọn):</strong>
-                  Trang tin tức / bài viết giúp tăng SEO.
+                  <strong>Báo Cáo:</strong>
+                  Dành cho những học viên phát hiện có dấu hiệu gian lận (thông tin công khai).
                 </li>
                 <li>
-                  <strong>Đánh giá khách hàng:</strong>
-                  Hiển thị đánh giá từ Google / Facebook.
+                  <strong>Nhật ký tập luyện:</strong>
+                  Chỉ mỗi học viên được thấy. Bao gồm: nội dung buổi tập, số phút tập, tình trạng sức khỏe. Nhật ký được hệ thống tự động tạo sẵn theo thời gian và lộ trình khóa học.
                 </li>
                 <li>
-                  <strong>Trang quản trị (Admin):</strong>
-                  Quản lý phòng (thêm/sửa/xoá), quản lý giá &amp; tình trạng phòng, quản lý hình ảnh, xử lý yêu cầu đặt phòng.
+                  <strong>Điểm danh trước buổi tập:</strong>
+                  Trước khi bắt đầu buổi tập, học viên nhấn "Điểm danh". Hệ thống ghi nhận thời điểm điểm danh và trạng thái buổi tập hợp lệ. Trạng thái bao gồm: Chưa điểm danh, Đã điểm danh, Quá hạn (không điểm danh).
                 </li>
                 <li>
-                  <strong>Hỗ trợ thiết kế logo miễn phí:</strong>
-                  Nếu Bên B cần, Bên A sẽ hỗ trợ thiết kế logo miễn phí.
+                  <strong>Theo dõi tiến độ cá nhân:</strong>
+                  Tổng số buổi đã điểm danh, số buổi bỏ lỡ, chuỗi ngày tập liên tục, tỷ lệ hoàn thành lộ trình khóa học.
+                </li>
+                <li>
+                  <strong>So sánh giữa các học viên:</strong>
+                  Mỗi học viên có thể so sánh tiến độ tập luyện với học viên khác trong cùng khóa. Nội dung so sánh: số buổi đã điểm danh, mức độ duy trì tập luyện, chuỗi ngày tập liên tục. Chỉ hiển thị dữ liệu tổng hợp, không đi vào chi tiết từng buổi tập.
+                </li>
+                <li>
+                  <strong>Bảng xếp hạng (BXH):</strong>
+                  Được tính tự động dựa trên số buổi điểm danh và độ đều đặn theo thời gian. Hiển thị thứ hạng của bản thân và danh sách học viên theo thứ tự duy trì tập luyện.
+                </li>
+              </ol>
+
+              <h3 class="font-semibold text-lg mt-6 mb-2">III. CHỨC NĂNG CHO ADMIN</h3>
+              <ol class="list-decimal list-inside space-y-2 ml-4">
+                <li>
+                  <strong>Quản lý học viên:</strong>
+                  Theo dõi và kick học viên nếu có hành vi gian lận.
+                </li>
+                <li>
+                  <strong>Quản lý khóa học &amp; lộ trình:</strong>
+                  Tạo và chỉnh sửa khóa học bóng đá. Thiết lập lịch tập, số buổi, nội dung từng buổi. Là cơ sở để hệ thống tự sinh nhật ký.
+                </li>
+                <li>
+                  <strong>Quản lý điểm danh:</strong>
+                  Xem lịch sử điểm danh của học viên, theo dõi tình trạng tham gia tập luyện.
+                </li>
+                <li>
+                  <strong>Quản lý BXH:</strong>
+                  Xem BXH theo tuần/tháng. Chốt hoặc reset BXH theo mốc thời gian (reset cuộc đua hàng tháng).
+                </li>
+                <li>
+                  <strong>Thông báo:</strong>
+                  Nhận thông báo nếu học viên nào đến hạn thanh toán tiếp theo (trước 3 ngày và trước 1 ngày).
+                </li>
+                <li>
+                  <strong>Cập nhật nhóm chat:</strong>
+                  Cập nhật thông tin trên nhóm chat (đăng bài trong nhóm tập luyện).
                 </li>
               </ol>
             </div>
