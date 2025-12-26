@@ -6,21 +6,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const app = document.querySelector("#app");
 
   app.innerHTML = `
-    <div class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-4xl w-full mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="min-h-screen bg-gray-50 py-2  sm:px-6 lg:px-8">
+      <div class="max-w-4xl w-full !p-3 lg:!p-6 mx-auto bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-300 sm:border-0">
         <!-- Header -->
         <div class="text-white min-h-16 flex items-center justify-center" style="background: linear-gradient(to right, #2563eb, #1e40af);">
           <h1 class="text-3xl font-bold text-center">HỢP ĐỒNG THIẾT KẾ WEBSITE</h1>
         </div>
 
         <!-- Contract Content -->
-        <div class="p-6 sm:p-8 space-y-6" id="contract-content">
+        <div class="!p-2 sm:p-8 space-y-6 !mt-4" id="contract-content">
           <!-- Thông tin bên A -->
           <section>
             <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
               BÊN A (BÊN THIẾT KẾ)
             </h2>
-            <div class="space-y-2 text-gray-700">
+            <div class="!space-y-2 text-gray-700 !my-2">
               <p><strong>Địa chỉ:</strong> 160 Đông Hưng Thuận 42, Phường Tân Hưng Thuận, Quận 12, TP. HCM</p>
               <p><strong>Điện thoại:</strong> 0386905265</p>
               <p><strong>Đại diện:</strong> Nguyễn Quốc Hưng</p>
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
               BÊN B (BÊN THUÊ)
             </h2>
-            <div class="space-y-2 text-gray-700">
+            <div class="!space-y-2 text-gray-700 !my-2">
               <p><strong>Họ và tên:</strong> <input type="text" id="client-name" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập tên khách hàng" /></p>
               <p><strong>Địa chỉ:</strong> <input type="text" id="client-address" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập địa chỉ" /></p>
               <p><strong>Điện thoại:</strong> <input type="text" id="client-phone" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập số điện thoại" /></p>
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="space-y-2 text-gray-700">
               <p><strong>Lĩnh vực:</strong> Website Đào Tạo Bóng Đá</p>
               <p><strong>Loại website:</strong> Website quản lý khóa học và học viên cho trung tâm đào tạo bóng đá SaiGon FC</p>
-              <p><strong>Thời gian thực hiện:</strong> 3 - 7 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
+              <p><strong>Thời gian thực hiện:</strong> 3 - 10 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
             </div>
           </section>
 
@@ -233,26 +233,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- Chữ ký -->
           <section class="mt-8 pt-6 border-t-2 border-gray-300 ">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 !mt-5">
               <div>
                 <h3 class="font-bold text-gray-800 mb-4">BÊN A (BÊN THIẾT KẾ)</h3>
                 <div class="mt-4">
-                  <label class="block text-sm font-medium text-gray-700 mb-2">Chữ ký của Bên A:</label>
-                  <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden">
+                  <label class="block text-sm font-medium text-gray-700 mb-4">Chữ ký của Bên A:</label>
+                  <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden !mt-4">
                     <img
                       src="/chu-ky-ten-hung-funky-signature-ttf.jpeg"
                       alt="Chữ ký Nguyễn Quốc Hưng"
                       class="w-full h-40 object-cover mx-auto"
                     />
                   </div>
-                  <p class="text-center font-semibold border-t-2 border-gray-400 pt-2 mt-4">Nguyễn Quốc Hưng</p>
+                  <p class="text-center font-semibold pt-2 !mt-4">Nguyễn Quốc Hưng</p>
                 </div>
               </div>
               <div>
                 <h3 class="font-bold text-gray-800 mb-4">BÊN B (BÊN THUÊ)</h3>
                 <div class="mt-4">
                   <label class="block text-sm font-medium text-gray-700 mb-2">Ký tên của Bên B:</label>
-                  <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden">
+                  <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden !mt-4">
                     <canvas
                       id="signature-canvas"
                       class="w-full h-40 cursor-crosshair touch-none"
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
                   <p
                     id="client-signature-name"
-                    class="text-center font-semibold border-t-2 border-gray-400 pt-2 mt-4"
+                    class="text-center font-semibold pt-2 !mt-4"
                   >
                     Đại diện Bên B
                   </p>
