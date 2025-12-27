@@ -61,20 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="bg-blue-50 p-4 rounded-lg space-y-1">
                 <p class="font-semibold text-lg text-blue-800">
                   Giá thiết kế web:
-                  <span class="text-2xl text-blue-600">2.900.000 VNĐ</span>
+                  <span class="text-2xl text-blue-600">3.000.000 VNĐ</span>
                   <span class="text-sm text-gray-700">(thanh toán 1 lần duy nhất cho gói thiết kế)</span>
                 </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
                   <strong>Đặt cọc 20%:</strong>
-                  Bên B thanh toán <strong class="text-blue-600">580.000 VNĐ</strong> (20% của 2.900.000 VNĐ)
+                  Bên B thanh toán <strong class="text-blue-600">600.000 VNĐ</strong> (20% của 3.000.000 VNĐ)
                   khi hợp đồng bắt đầu có hiệu lực.
                 </li>
                 <li>
                   <strong>Thanh toán phần còn lại:</strong>
                   Khi dự án hoàn thành và website được bàn giao đúng theo thỏa thuận,
-                  Bên B thanh toán <strong class="text-blue-600">2.320.000 VNĐ</strong> (80% còn lại của 2.900.000 VNĐ).
+                  Bên B thanh toán <strong class="text-blue-600">2.400.000 VNĐ</strong> (80% còn lại của 3.000.000 VNĐ).
                 </li>
               </ol>
               <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
