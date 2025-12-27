@@ -154,7 +154,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </li>
                 <li>
                   <strong>Bảng xếp hạng (BXH):</strong>
-                  Được tính tự động dựa trên số buổi điểm danh và độ đều đặn theo thời gian. Hiển thị thứ hạng của bản thân và danh sách học viên theo thứ tự duy trì tập luyện.
+                  Được tính tự động dựa trên số buổi điểm danh và độ đều đặn theo thời gian. Hiển thị thứ hạng của bản thân và danh sách học viên theo thứ tự duy trì tập luyện. Có hiệu ứng đặc biệt khi học viên đạt chuỗi 3, 5, 7 ngày tập liên tiếp (animation, badge, highlight). Có ô tìm kiếm để tìm kiếm học viên trong bảng xếp hạng.
+                </li>
+                <li>
+                  <strong>Chế độ Dark/Light mode:</strong>
+                  Học viên có thể chuyển đổi giữa chế độ sáng và chế độ tối để tùy chỉnh giao diện theo sở thích cá nhân.
                 </li>
               </ol>
 
