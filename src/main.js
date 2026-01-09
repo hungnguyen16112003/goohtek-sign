@@ -69,10 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
               ĐIỀU KHOẢN THANH TOÁN
             </h2>
             <div class="space-y-3 text-gray-700">
-              <div class="bg-blue-50 p-4 rounded-lg space-y-1">
-                <p class="font-semibold text-lg text-blue-800">
+              <div class="space-y-1">
+                <p class="font-semibold text-base text-gray-700">
                   Tổng giá trị hợp đồng:
-                  <span class="text-2xl text-blue-600">7.000.000 VNĐ</span>
+                  <span class="text-base text-gray-700">7.000.000 VNĐ</span>
                 </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
