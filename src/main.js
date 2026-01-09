@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><strong>Account:</strong> 20 account Facebook</li>
                 <li><strong>Proxy:</strong> Nếu có sử dụng (theo yêu cầu)</li>
                 <li><strong>API ChatGPT:</strong> Sinh bài và comment tự động</li>
+                <li><strong>Tài khoản GenLogin:</strong> Khi có nhu cầu chạy trên 5 tab cùng 1 thời điểm</li>
               </ul>
             </div>
           </section>
@@ -164,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3 class="font-semibold mb-2">Bên A có trách nhiệm:</h3>
                 <ul class="list-disc list-inside space-y-1 ml-4">
                   <li>Thực hiện đúng và đầy đủ các công việc đã cam kết trong hợp đồng</li>
-                  <li>Bàn giao dự áns đúng thời hạn và chất lượng</li>
+                  <li>Bàn giao dự án đúng thời hạn và chất lượng</li>
                   <li>Hỗ trợ kỹ thuật trong suốt thời gian Bên B sử dụng dịch vụ của Bên A</li>
                   <li>Cung cấp tài liệu hoặc hướng dẫn sử dụng</li>
                 </ul>
@@ -174,7 +175,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ul class="list-disc list-inside space-y-1 ml-4">
                   <li>Thanh toán đúng hạn theo các mốc thanh toán đã thỏa thuận</li>
                   <li>Cung cấp đầy đủ thông tin, hình ảnh, nội dung cần thiết cho dự án</li>
-                  <li>Phản hồi và duyệt thiết kế trong vòng 03 ngày làm việc</li>
                   <li>Thanh toán đầy đủ khi dự án hoàn thành</li>
                 </ul>
               </div>
