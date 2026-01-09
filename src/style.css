@@ -69,9 +69,29 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", "Segoe UI", Tahoma, Geneva, Verdana, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style cho hợp đồng giống giấy tờ */
+.contract-paper {
+  font-family: "Times New Roman", serif !important;
+  line-height: 1.6;
+}
+
+.contract-paper h1,
+.contract-paper h2,
+.contract-paper h3 {
+  font-family: "Times New Roman", serif !important;
+  font-weight: bold;
+}
+
+.contract-paper p,
+.contract-paper li {
+  font-family: "Times New Roman", serif !important;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 #app {

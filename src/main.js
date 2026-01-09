@@ -7,17 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   app.innerHTML = `
     <div class="min-h-screen bg-gray-50 py-2  sm:px-6 lg:px-8">
-      <div class="max-w-4xl w-full !p-3 lg:!p-6 mx-auto bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-300 sm:border-0">
+      <div class="max-w-4xl w-full !p-3 lg:!p-6 mx-auto bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-300 sm:border-0 contract-paper" style="font-family: 'Times New Roman', serif;">
+        <!-- Quốc hiệu và Tiêu ngữ -->
+        <div class="text-center mb-6 pt-4">
+          <div class="uppercase font-bold text-base mb-2" style="font-size: 14px; letter-spacing: 0.5px;">
+            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+          </div>
+          <div class="font-bold text-sm mb-1" style="font-size: 13px;">
+            Độc lập - Tự do - Hạnh phúc
+          </div>
+          <div class=" w-32 mx-auto mt-2 mb-4"></div>
+        </div>
+
         <!-- Header -->
-        <div class="text-white min-h-16 flex items-center justify-center" style="background: linear-gradient(to right, #2563eb, #1e40af);">
-          <h1 class="text-3xl font-bold text-center">HỢP ĐỒNG THIẾT KẾ WEBSITE</h1>
+        <div class="text-center mb-6">
+          <h1 class="text-2xl font-bold uppercase" style="font-size: 20px; letter-spacing: 1px;">HỢP ĐỒNG</h1>
         </div>
 
         <!-- Contract Content -->
         <div class="!p-2 sm:p-8 space-y-6 !mt-4" id="contract-content">
           <!-- Thông tin bên A -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               BÊN A (BÊN THIẾT KẾ)
             </h2>
             <div class="!space-y-2 text-gray-700 !my-2">
@@ -30,19 +41,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- Thông tin bên B -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               BÊN B (BÊN THUÊ)
             </h2>
             <div class="!space-y-2 text-gray-700 !my-2">
-              <p><strong>Họ và tên:</strong> <input type="text" id="client-name" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập tên khách hàng" /></p>
-              <p><strong>Địa chỉ:</strong> <input type="text" id="client-address" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập địa chỉ" /></p>
-              <p><strong>Điện thoại:</strong> <input type="text" id="client-phone" class="border-b border-gray-300 focus:border-blue-500 focus:outline-none px-2" placeholder="Nhập số điện thoại" /></p>
+              <p><strong>Họ và tên:</strong> <input type="text" id="client-name" class="border-b border-gray-300 focus:border-gray-500 focus:outline-none px-2" placeholder="Nhập tên khách hàng" /></p>
+              <p><strong>Địa chỉ:</strong> <input type="text" id="client-address" class="border-b border-gray-300 focus:border-gray-500 focus:outline-none px-2" placeholder="Nhập địa chỉ" /></p>
+              <p><strong>Điện thoại:</strong> <input type="text" id="client-phone" class="border-b border-gray-300 focus:border-gray-500 focus:outline-none px-2" placeholder="Nhập số điện thoại" /></p>
             </div>
           </section>
 
           <!-- Thông tin dự án -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               THÔNG TIN DỰ ÁN
             </h2>
             <div class="space-y-2 text-gray-700">
@@ -54,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- Điều khoản thanh toán -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               ĐIỀU KHOẢN THANH TOÁN
             </h2>
             <div class="space-y-3 text-gray-700">
@@ -89,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- Phạm vi công việc -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               PHẠM VI CÔNG VIỆC
             </h2>
             <div class="space-y-2 text-gray-700">
@@ -145,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- Quyền và nghĩa vụ -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               QUYỀN VÀ NGHĨA VỤ
             </h2>
             <div class="space-y-3 text-gray-700">
@@ -172,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- Điều khoản khác -->
           <section>
-            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
               ĐIỀU KHOẢN KHÁC
             </h2>
             <div class="space-y-2 text-gray-700">
