@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="space-y-1">
                 <p class="font-semibold text-base text-gray-700">
                   Tổng giá trị hợp đồng:
-                  <span class="text-base text-gray-700">7.000.000 VNĐ</span>
+                  <span class="text-base text-gray-700">8.000.000 VNĐ</span>
                 </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
