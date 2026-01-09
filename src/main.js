@@ -16,12 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="font-bold text-sm mb-1" style="font-size: 13px;">
             Độc lập - Tự do - Hạnh phúc
           </div>
-          <div class=" w-32 mx-auto mt-2 mb-4"></div>
-        </div>
-
-        <!-- Header -->
-        <div class="text-center mb-6">
-          <h1 class="text-2xl font-bold uppercase" style="font-size: 20px; letter-spacing: 1px;">HỢP ĐỒNG</h1>
+          <div class="w-32 mx-auto !mt-14 mb-6"></div>
+          <!-- Header -->
+          <h1 class="text-2xl font-bold uppercase mt-6" style="font-size: 20px; letter-spacing: 1px;">HỢP ĐỒNG</h1>
         </div>
 
         <!-- Contract Content -->
