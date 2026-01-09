@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
               THÔNG TIN DỰ ÁN
             </h2>
             <div class="space-y-2 text-gray-700">
-              <p><strong>Lĩnh vực:</strong> Website Đào Tạo Bóng Đá</p>
-              <p><strong>Loại website:</strong> Website quản lý khóa học và học viên cho trung tâm đào tạo bóng đá SaiGon FC</p>
-              <p><strong>Thời gian thực hiện:</strong> 3 - 10 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
+              <p><strong>Lĩnh vực:</strong> Dịch vụ Marketing &amp; Quảng cáo</p>
+              <p><strong>Loại dịch vụ:</strong> Hệ thống tự động hóa quảng cáo và seeding trên Facebook và TikTok</p>
+              <p><strong>Thời gian thực hiện:</strong> Theo từng đợt bàn giao từng tool, thời gian cụ thể sẽ được thỏa thuận giữa hai bên</p>
             </div>
           </section>
 
@@ -60,29 +60,28 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="space-y-3 text-gray-700">
               <div class="bg-blue-50 p-4 rounded-lg space-y-1">
                 <p class="font-semibold text-lg text-blue-800">
-                  Giá thiết kế web:
-                  <span class="text-2xl text-blue-600">3.000.000 VNĐ</span>
-                  <span class="text-sm text-gray-700">(thanh toán 1 lần duy nhất cho gói thiết kế)</span>
+                  Tổng giá trị hợp đồng:
+                  <span class="text-2xl text-blue-600">7.000.000 VNĐ</span>
                 </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Đặt cọc 20%:</strong>
-                  Bên B thanh toán <strong class="text-blue-600">600.000 VNĐ</strong> (20% của 3.000.000 VNĐ)
-                  khi hợp đồng bắt đầu có hiệu lực.
+                  <strong>Phương thức thanh toán:</strong>
+                 
                 </li>
                 <li>
-                  <strong>Thanh toán phần còn lại:</strong>
-                  Khi dự án hoàn thành và website được bàn giao đúng theo thỏa thuận,
-                  Bên B thanh toán <strong class="text-blue-600">2.400.000 VNĐ</strong> (80% còn lại của 3.000.000 VNĐ).
+                  <strong>Thanh toán theo đợt:</strong>
+                  Mỗi khi một tool được hoàn thành và bàn giao, Bên B sẽ thanh toán phần giá trị tương ứng của tool đó theo thỏa thuận giữa hai bên.
                 </li>
               </ol>
               <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
-                <li><strong>Phí duy trì tính theo tháng:</strong> 350.000 VNĐ / tháng</li>
                 <li>
-                  <strong>Tặng kèm:</strong>
-                  Tên miền tùy chọn / Bảo mật SSL / Bảo trì kỹ thuật / Thiết kế logo miễn phí. Tặng thêm 3 tháng phí duy trì
-                
+                  <strong>Phí dịch vụ phần mềm:</strong>
+                  Set up hệ thống đầu tiên chạy quy trình 20 acc.
+                </li>
+                <li>
+                  <strong>Nhân rộng quy trình hoặc bảo trì:</strong>
+                  Sau khi chạy ổn, nếu cần nhân rộng quy trình hoặc bảo trì sẽ tính phí phát sinh thêm theo thỏa thuận.
                 </li>
               </ul>
             </div>
@@ -94,101 +93,53 @@ document.addEventListener("DOMContentLoaded", () => {
               PHẠM VI CÔNG VIỆC
             </h2>
             <div class="space-y-2 text-gray-700">
-              <h3 class="font-semibold text-lg mt-4 mb-2">I. TRANG CHỦ</h3>
-              <ol class="list-decimal list-inside space-y-2 ml-4">
-                <li>Giới thiệu các khóa học hiện có của SaiGon FC (online và offline)</li>
-                <li>Giới thiệu về Coach, giáo án, liên hệ</li>
-                <li>Khi học viên chọn khóa học online thì sẽ hiện ra trang thanh toán</li>
-                <li>Học viên upload hình chuyển khoản, sau đó chờ Admin xác nhận để vào học</li>
-              </ol>
-
-              <h3 class="font-semibold text-lg mt-6 mb-2">II. CHỨC NĂNG CHO HỌC VIÊN</h3>
+              <h3 class="font-semibold text-lg mt-4 mb-2">I. TOOLS FACEBOOK</h3>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Đăng nhập/Đăng ký hệ thống:</strong>
-                  Học viên tự đăng ký tài khoản với tên riêng và avatar cá nhân. Đăng nhập bằng tài khoản đã tạo.
+                  <strong>Account Facebook Bác sĩ:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Đăng bài lên tường (kèm hình ảnh)</li>
+                    <li>Kết bạn với các account đã like của bài chạy quảng cáo khác</li>
+                  </ul>
                 </li>
                 <li>
-                  <strong>Trang chủ:</strong>
-                  Hiển thị thông tin "ĐIỂM DANH HÔM NAY" kèm slogan truyền động lực. Ở dưới là FAQ/Liên hệ và luật chơi.
-                </li>
-                <li>
-                  <strong>Header với các mục:</strong>
-                  Bảng Xếp Hạng, Nhóm tập luyện, Khóa học, Hồ sơ cá nhân.
-                </li>
-                <li>
-                  <strong>Bảng Xếp Hạng:</strong>
-                  Hiển thị tên học viên, số buổi tập, chuỗi ngày tập liên tục. Mỗi học viên có thể xem hồ sơ của các học viên khác.
-                </li>
-                <li>
-                  <strong>Nhóm tập luyện (Chat chung):</strong>
-                  Chỉ Admin được đăng bài, các học viên khác chỉ có thể comment.
-                </li>
-                <li>
-                  <strong>Khóa học:</strong>
-                  Hiển thị những khóa học đã mua và ngày mua.
-                </li>
-                <li>
-                  <strong>Hồ sơ Học viên:</strong>
-                  Thành tích đạt được trên bảng xếp hạng, ngày điểm danh, huy hiệu được trao.
-                </li>
-                <li>
-                  <strong>Báo Cáo:</strong>
-                  Dành cho những học viên phát hiện có dấu hiệu gian lận (thông tin công khai).
-                </li>
-                <li>
-                  <strong>Nhật ký tập luyện:</strong>
-                  Chỉ mỗi học viên được thấy. Bao gồm: nội dung buổi tập, số phút tập, tình trạng sức khỏe. Nhật ký được hệ thống tự động tạo sẵn theo thời gian và lộ trình khóa học.
-                </li>
-                <li>
-                  <strong>Điểm danh trước buổi tập:</strong>
-                  Trước khi bắt đầu buổi tập, học viên nhấn "Điểm danh". Hệ thống ghi nhận thời điểm điểm danh và trạng thái buổi tập hợp lệ. Trạng thái bao gồm: Chưa điểm danh, Đã điểm danh, Quá hạn (không điểm danh).
-                </li>
-                <li>
-                  <strong>Theo dõi tiến độ cá nhân:</strong>
-                  Tổng số buổi đã điểm danh, số buổi bỏ lỡ, chuỗi ngày tập liên tục, tỷ lệ hoàn thành lộ trình khóa học.
-                </li>
-                <li>
-                  <strong>So sánh giữa các học viên:</strong>
-                  Mỗi học viên có thể so sánh tiến độ tập luyện với học viên khác trong cùng khóa. Nội dung so sánh: số buổi đã điểm danh, mức độ duy trì tập luyện, chuỗi ngày tập liên tục. Chỉ hiển thị dữ liệu tổng hợp, không đi vào chi tiết từng buổi tập.
-                </li>
-                <li>
-                  <strong>Bảng xếp hạng (BXH):</strong>
-                  Được tính tự động dựa trên số buổi điểm danh và độ đều đặn theo thời gian. Hiển thị thứ hạng của bản thân và danh sách học viên theo thứ tự duy trì tập luyện. Có hiệu ứng đặc biệt khi học viên đạt chuỗi 3, 5, 7 ngày tập liên tiếp (animation, badge, highlight). Có ô tìm kiếm để tìm kiếm học viên trong bảng xếp hạng.
-                </li>
-                <li>
-                  <strong>Chế độ Dark/Light mode:</strong>
-                  Học viên có thể chuyển đổi giữa chế độ sáng và chế độ tối để tùy chỉnh giao diện theo sở thích cá nhân.
+                  <strong>Account Facebook Seeding:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Đăng bài lên group (kèm hình ảnh)</li>
+                    <li>Comment vào các bài có key tìm kiếm (ví dụ: Nâng Mũi) kèm hình ảnh</li>
+                  </ul>
                 </li>
               </ol>
 
-              <h3 class="font-semibold text-lg mt-6 mb-2">III. CHỨC NĂNG CHO ADMIN</h3>
+              <h3 class="font-semibold text-lg mt-6 mb-2">II. TOOLS TIKTOK</h3>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Quản lý học viên:</strong>
-                  Theo dõi và kick học viên nếu có hành vi gian lận.
+                  <strong>Account TikTok Bác sĩ:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Đăng video</li>
+                    <li>Follow những người thích video</li>
+                  </ul>
                 </li>
                 <li>
-                  <strong>Quản lý khóa học &amp; lộ trình:</strong>
-                  Tạo và chỉnh sửa khóa học bóng đá. Thiết lập lịch tập, số buổi, nội dung từng buổi. Là cơ sở để hệ thống tự sinh nhật ký.
-                </li>
-                <li>
-                  <strong>Quản lý điểm danh:</strong>
-                  Xem lịch sử điểm danh của học viên, theo dõi tình trạng tham gia tập luyện.
-                </li>
-                <li>
-                  <strong>Quản lý BXH:</strong>
-                  Xem BXH theo tuần/tháng. Chốt hoặc reset BXH theo mốc thời gian (reset cuộc đua hàng tháng).
-                </li>
-                <li>
-                  <strong>Thông báo:</strong>
-                  Nhận thông báo nếu học viên nào đến hạn thanh toán tiếp theo (trước 3 ngày và trước 1 ngày).
-                </li>
-                <li>
-                  <strong>Cập nhật nhóm chat:</strong>
-                  Cập nhật thông tin trên nhóm chat (đăng bài trong nhóm tập luyện).
+                  <strong>Account TikTok Seeding:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Comment vào các bài hot trend kèm hình ảnh</li>
+                  </ul>
                 </li>
               </ol>
+
+              <h3 class="font-semibold text-lg mt-6 mb-2">III. TOOLS BỔ TRỢ</h3>
+              <ol class="list-decimal list-inside space-y-2 ml-4">
+                <li><strong>Tool Kết bạn:</strong> Tự động kết bạn theo yêu cầu</li>
+                <li><strong>Tool Join Group:</strong> Tự động tham gia group theo yêu cầu</li>
+              </ol>
+
+              <h3 class="font-semibold text-lg mt-6 mb-2">IV. TÀI NGUYÊN</h3>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong>Account:</strong> 20 account Facebook</li>
+                <li><strong>Proxy:</strong> Nếu có sử dụng (theo yêu cầu)</li>
+                <li><strong>API ChatGPT:</strong> Sinh bài và comment tự động</li>
+              </ul>
             </div>
           </section>
 
@@ -202,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3 class="font-semibold mb-2">Bên A có trách nhiệm:</h3>
                 <ul class="list-disc list-inside space-y-1 ml-4">
                   <li>Thực hiện đúng và đầy đủ các công việc đã cam kết trong hợp đồng</li>
-                  <li>Bàn giao website đúng thời hạn và chất lượng</li>
+                  <li>Bàn giao dự áns đúng thời hạn và chất lượng</li>
                   <li>Hỗ trợ kỹ thuật trong suốt thời gian Bên B sử dụng dịch vụ của Bên A</li>
                   <li>Cung cấp tài liệu hoặc hướng dẫn sử dụng</li>
                 </ul>
@@ -226,9 +177,12 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <div class="space-y-2 text-gray-700">
               <ul class="list-disc list-inside space-y-2 ml-4">
-                <li>Hợp đồng này có hiệu lực 3 năm từ ngày ký và có thể gia hạn hợp đồng sau 3 năm, giá thay đổi không vượt quá 50% giá ban đầu</li>
-                <li>Mọi thay đổi về thiết kế hoặc tính năng ngoài phạm vi ban đầu có thể tính thêm phí bổ sung và thời gian bàn giao</li>
-                <li>Bên A giữ bản quyền thiết kế cho đến khi Bên B thanh toán đầy đủ</li>
+                <li>
+                  <strong>Cam kết bảo mật:</strong>
+                  Bên A cam kết bảo mật thông tin người làm dịch vụ, không tiết lộ thông tin cá nhân, danh tính hoặc bất kỳ thông tin nào liên quan đến người thực hiện dịch vụ cho bất kỳ bên thứ ba nào.
+                </li>
+                <li>Hợp đồng này có hiệu lực từ ngày ký cho đến khi hoàn thành tất cả các công việc đã thỏa thuận</li>
+                <li>Mọi thay đổi về phạm vi công việc hoặc tính năng ngoài phạm vi ban đầu có thể tính thêm phí bổ sung và thời gian bàn giao</li>
                 <li>Mọi tranh chấp sẽ được giải quyết thông qua thương lượng, nếu không sẽ đưa ra Tòa án có thẩm quyền</li>
                 <li>Hợp đồng được lập thành 02 bản, mỗi bên giữ 01 bản có giá trị pháp lý như nhau</li>
               </ul>
