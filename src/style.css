@@ -78,6 +78,7 @@ body {
 .contract-paper {
   font-family: "Times New Roman", serif !important;
   line-height: 1.6;
+  font-size: 14px;
 }
 
 .contract-paper h1,
@@ -87,11 +88,27 @@ body {
   font-weight: bold;
 }
 
+.contract-paper h1 {
+  font-size: 22px !important;
+}
+
+.contract-paper h2 {
+  font-size: 18px !important;
+}
+
+.contract-paper h3 {
+  font-size: 16px !important;
+}
+
 .contract-paper p,
 .contract-paper li {
   font-family: "Times New Roman", serif !important;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
+}
+
+.contract-paper input {
+  font-size: 14px !important;
 }
 
 #app {

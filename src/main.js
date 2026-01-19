@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="max-w-4xl w-full !p-3 lg:!p-6 mx-auto bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-300 sm:border-0 contract-paper" style="font-family: 'Times New Roman', serif;">
         <!-- Quốc hiệu và Tiêu ngữ -->
         <div class="text-center mb-6 pt-4">
-          <div class="uppercase font-bold text-base mb-2" style="font-size: 14px; letter-spacing: 0.5px;">
+          <div class="uppercase font-bold text-base mb-2" style="font-size: 15px; letter-spacing: 0.5px;">
             CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
           </div>
-          <div class="font-bold text-sm mb-1" style="font-size: 13px;">
+          <div class="font-bold text-sm mb-1" style="font-size: 14px;">
             Độc lập - Tự do - Hạnh phúc
           </div>
           <div class="w-32 mx-auto !mt-14 mb-6"></div>
           <!-- Header -->
-          <h1 class="text-2xl font-bold uppercase mt-6" style="font-size: 20px; letter-spacing: 1px;">HỢP ĐỒNG</h1>
+          <h1 class="text-2xl font-bold uppercase mt-6" style="font-size: 22px; letter-spacing: 1px;">HỢP ĐỒNG</h1>
         </div>
 
         <!-- Contract Content -->
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <!-- Thông tin bên A -->
           <section>
             <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
-              BÊN A (BÊN THIẾT KẾ)
+              BÊN A (BÊN CUNG CẤP DỊCH VỤ)
             </h2>
             <div class="!space-y-2 text-gray-700 !my-2">
               <p><strong>Địa chỉ:</strong> 160 Đông Hưng Thuận 42, Phường Tân Hưng Thuận, Quận 12, TP. HCM</p>
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <!-- Thông tin bên B -->
           <section>
             <h2 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
-              BÊN B (BÊN THUÊ)
+              BÊN B (BÊN SỬ DỤNG DỊCH VỤ)
             </h2>
             <div class="!space-y-2 text-gray-700 !my-2">
               <p><strong>Họ và tên:</strong> <input type="text" id="client-name" class="border-b border-gray-300 focus:border-gray-500 focus:outline-none px-2" placeholder="Nhập tên khách hàng" /></p>
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
               THÔNG TIN DỰ ÁN
             </h2>
             <div class="space-y-2 text-gray-700">
-              <p><strong>Lĩnh vực:</strong> Dịch vụ Marketing &amp; Quảng cáo</p>
-              <p><strong>Loại dịch vụ:</strong> Hệ thống tự động hóa quảng cáo và seeding trên Facebook và TikTok</p>
-              <p><strong>Thời gian thực hiện:</strong> Theo từng đợt bàn giao từng tool, thời gian cụ thể sẽ được thỏa thuận giữa hai bên</p>
+              <p><strong>Lĩnh vực:</strong> Website Dịch vụ &amp; Tour Booking</p>
+              <p><strong>Loại website:</strong> Website đặt tour và dịch vụ với hệ thống quản lý đơn hàng</p>
+              <p><strong>Thời gian thực hiện:</strong> 3 - 10 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
             </div>
           </section>
 
@@ -69,27 +69,27 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="space-y-1">
                 <p class="font-semibold text-base text-gray-700">
                   Tổng giá trị hợp đồng:
-                  <span class="text-base text-gray-700">8.000.000 VNĐ</span>
+                  <span class="text-base text-gray-700">3.900.000 VNĐ</span>
+                  <span class="text-sm text-gray-600">(Thiết kế logo: 1.000.000 VNĐ + Thiết kế website: 2.900.000 VNĐ)</span>
                 </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Phương thức thanh toán:</strong>
-                 
+                  <strong>Đặt cọc 20%:</strong>
+                  Bên B thanh toán <strong class="text-gray-700">780.000 VNĐ</strong> (20% của 3.900.000 VNĐ)
+                  khi hợp đồng bắt đầu có hiệu lực.
                 </li>
                 <li>
-                  <strong>Thanh toán theo đợt:</strong>
-                  Mỗi khi một tool được hoàn thành và bàn giao, Bên B sẽ thanh toán phần giá trị tương ứng của tool đó theo thỏa thuận giữa hai bên.
+                  <strong>Thanh toán phần còn lại:</strong>
+                  Khi dự án hoàn thành và website được bàn giao đúng theo thỏa thuận,
+                  Bên B thanh toán <strong class="text-gray-700">3.120.000 VNĐ</strong> (80% còn lại của 3.900.000 VNĐ).
                 </li>
               </ol>
               <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
+                <li><strong>Phí duy trì tính theo tháng:</strong> 290.000 VNĐ / tháng</li>
                 <li>
-                  <strong>Phí dịch vụ phần mềm:</strong>
-                  Set up hệ thống đầu tiên chạy quy trình 20 acc.
-                </li>
-                <li>
-                  <strong>Nhân rộng quy trình hoặc bảo trì:</strong>
-                  Sau khi chạy ổn, nếu cần nhân rộng quy trình hoặc bảo trì sẽ tính phí phát sinh thêm theo thỏa thuận.
+                  <strong>Tặng kèm:</strong>
+                  Tên miền tùy chọn / Bảo mật SSL / Bảo trì kỹ thuật / Thiết kế logo miễn phí. Tặng thêm 3 tháng phí duy trì
                 </li>
               </ul>
             </div>
@@ -101,54 +101,74 @@ document.addEventListener("DOMContentLoaded", () => {
               PHẠM VI CÔNG VIỆC
             </h2>
             <div class="space-y-2 text-gray-700">
-              <h3 class="font-semibold text-lg mt-4 mb-2">I. TOOLS FACEBOOK</h3>
-              <ol class="list-decimal list-inside space-y-2 ml-4">
+              <ol class="list-decimal list-inside space-y-3 ml-4">
                 <li>
-                  <strong>Account Facebook Bác sĩ:</strong>
+                  <strong>Trang chủ (Home):</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Đăng bài lên tường (kèm hình ảnh)</li>
-                    <li>Kết bạn với các account đã like của bài chạy quảng cáo khác</li>
+                    <li>Slider/Banner quảng cáo</li>
+                    <li>Danh mục dịch vụ hot</li>
+                    <li>Tìm kiếm nhanh</li>
+                    <li>Feedback khách hàng</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Account Facebook Seeding:</strong>
+                  <strong>Module Tìm kiếm:</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Đăng bài lên group (kèm hình ảnh)</li>
-                    <li>Comment vào các bài có key tìm kiếm (ví dụ: Nâng Mũi) kèm hình ảnh</li>
+                    <li>Bộ lọc (Ngày, địa điểm, giá)</li>
+                    <li>Kiểm tra tình trạng còn chỗ</li>
+                    <li>Form gửi yêu cầu đặt chỗ</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Quản lý Dịch vụ:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Danh sách sản phẩm (Thông tin, ảnh, giá tham khảo)</li>
+                    <li>Chi tiết sản phẩm</li>
+                    <li>Quản lý kho chỗ</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Xác nhận đơn hàng:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Xem lại dịch vụ đã chọn</li>
+                    <li>Form điền thông tin liên hệ</li>
+                    <li>Nhận thông báo "Đặt chỗ thành công"</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Quản lý Khách hàng:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Đăng ký/Đăng nhập</li>
+                    <li>Xem lại các tour/dịch vụ đã đặt</li>
+                    <li>Quản lý thông tin cá nhân</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Hệ thống Quản trị:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Dashboard thống kê</li>
+                    <li>Quản lý nội dung (CMS)</li>
+                    <li>Quản lý đơn hàng</li>
+                    <li>Phân quyền nhân viên</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Hỗ trợ khách hàng:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Chat trực tuyến (Zalo/Messenger)</li>
+                    <li>Trang câu hỏi thường gặp (FAQ)</li>
+                    <li>Form liên hệ/Góp ý</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Blog/Tin tức:</strong>
+                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
+                    <li>Danh mục bài viết</li>
+                    <li>Viết bài chuẩn SEO</li>
+                    <li>Hệ thống bình luận</li>
                   </ul>
                 </li>
               </ol>
-
-              <h3 class="font-semibold text-lg mt-6 mb-2">II. TOOLS TIKTOK</h3>
-              <ol class="list-decimal list-inside space-y-2 ml-4">
-                <li>
-                  <strong>Account TikTok Bác sĩ:</strong>
-                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Đăng video</li>
-                    <li>Follow những người thích video</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Account TikTok Seeding:</strong>
-                  <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Comment vào các bài hot trend kèm hình ảnh</li>
-                  </ul>
-                </li>
-              </ol>
-
-              <h3 class="font-semibold text-lg mt-6 mb-2">III. TOOLS BỔ TRỢ</h3>
-              <ol class="list-decimal list-inside space-y-2 ml-4">
-                <li><strong>Tool Kết bạn:</strong> Tự động kết bạn theo yêu cầu</li>
-                <li><strong>Tool Join Group:</strong> Tự động tham gia group theo yêu cầu</li>
-              </ol>
-
-              <h3 class="font-semibold text-lg mt-6 mb-2">IV. TÀI NGUYÊN</h3>
-              <ul class="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Account:</strong> 20 account Facebook</li>
-                <li><strong>Proxy:</strong> Nếu có sử dụng (theo yêu cầu)</li>
-                <li><strong>API ChatGPT:</strong> Sinh bài và comment tự động</li>
-                <li><strong>Tài khoản GenLogin:</strong> Khi có nhu cầu chạy trên 5 tab cùng 1 thời điểm</li>
-              </ul>
             </div>
           </section>
 
@@ -201,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <section class="mt-8 pt-6 border-t-2 border-gray-300 ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 !mt-5">
               <div>
-                <h3 class="font-bold text-gray-800 mb-4">BÊN A (BÊN THIẾT KẾ)</h3>
+                <h3 class="font-bold text-gray-800 mb-4">BÊN A (BÊN CUNG CẤP DỊCH VỤ)</h3>
                 <div class="mt-4">
                   <label class="block text-sm font-medium text-gray-700 mb-4">Chữ ký của Bên A:</label>
                   <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden !mt-4">
@@ -215,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               </div>
               <div>
-                <h3 class="font-bold text-gray-800 mb-4">BÊN B (BÊN THUÊ)</h3>
+                <h3 class="font-bold text-gray-800 mb-4">BÊN B (BÊN SỬ DỤNG DỊCH VỤ)</h3>
                 <div class="mt-4">
                   <label class="block text-sm font-medium text-gray-700 mb-2">Ký tên của Bên B:</label>
                   <div class="border-2 border-gray-300 rounded-lg bg-white overflow-hidden !mt-4">
