@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
               THÔNG TIN DỰ ÁN
             </h2>
             <div class="space-y-2 text-gray-700">
-              <p><strong>Lĩnh vực:</strong> Website Dịch vụ &amp; Tour Booking</p>
-              <p><strong>Loại website:</strong> Website đặt tour và dịch vụ với hệ thống quản lý đơn hàng</p>
+              <p><strong>Lĩnh vực:</strong> Website Dịch vụ Thiết kế</p>
+              <p><strong>Loại website:</strong> Website cung cấp dịch vụ thiết kế thiệp cưới online và slide trình chiếu</p>
               <p><strong>Thời gian thực hiện:</strong> 3 - 10 ngày làm việc kể từ khi hợp đồng bắt đầu có hiệu lực</p>
             </div>
           </section>
@@ -69,27 +69,26 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="space-y-1">
                 <p class="font-semibold text-base text-gray-700">
                   Tổng giá trị hợp đồng:
-                  <span class="text-base text-gray-700">3.900.000 VNĐ</span>
-                  <span class="text-sm text-gray-600">(Thiết kế logo: 1.000.000 VNĐ + Thiết kế website: 2.900.000 VNĐ)</span>
+                  <span class="text-base text-gray-700">4.500.000 VNĐ</span>
                 </p>
               </div>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li>
                   <strong>Đặt cọc 20%:</strong>
-                  Bên B thanh toán <strong class="text-gray-700">780.000 VNĐ</strong> (20% của 3.900.000 VNĐ)
+                  Bên B thanh toán <strong class="text-gray-700">900.000 VNĐ</strong> (20% của 4.500.000 VNĐ)
                   khi hợp đồng bắt đầu có hiệu lực.
                 </li>
                 <li>
                   <strong>Thanh toán phần còn lại:</strong>
                   Khi dự án hoàn thành và website được bàn giao đúng theo thỏa thuận,
-                  Bên B thanh toán <strong class="text-gray-700">3.120.000 VNĐ</strong> (80% còn lại của 3.900.000 VNĐ).
+                  Bên B thanh toán <strong class="text-gray-700">3.600.000 VNĐ</strong> (80% còn lại của 4.500.000 VNĐ).
                 </li>
               </ol>
               <ul class="list-disc list-inside space-y-2 ml-4 pt-2 border-t border-gray-200">
-                <li><strong>Phí duy trì tính theo tháng:</strong> 290.000 VNĐ / tháng</li>
+                <li><strong>Phí duy trì tính theo tháng:</strong> 299.000 VNĐ / tháng</li>
                 <li>
                   <strong>Tặng kèm:</strong>
-                  Tên miền tùy chọn / Bảo mật SSL / Bảo trì kỹ thuật / Thiết kế logo miễn phí. Tặng thêm 3 tháng phí duy trì
+                  Tên miền tùy chọn / Bảo mật SSL / Bảo trì kỹ thuật. Tặng 1 tháng đầu tiên phí duy trì
                 </li>
               </ul>
             </div>
@@ -105,50 +104,52 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>
                   <strong>Trang chủ (Home):</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Slider/Banner quảng cáo</li>
-                    <li>Danh mục dịch vụ hot</li>
-                    <li>Tìm kiếm nhanh</li>
-                    <li>Feedback khách hàng</li>
+                    <li>Slider/Banner giới thiệu dịch vụ</li>
+                    <li>Danh mục dịch vụ thiết kế (Thiệp cưới, Slide trình chiếu)</li>
+                    <li>Gallery mẫu thiết kế</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Module Tìm kiếm:</strong>
+                  <strong>Dịch vụ Thiết kế Thiệp Cưới Online:</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Bộ lọc (Ngày, địa điểm, giá)</li>
-                    <li>Kiểm tra tình trạng còn chỗ</li>
-                    <li>Form gửi yêu cầu đặt chỗ</li>
+                    <li>Trang chọn mẫu thiệp cưới</li>
+                    <li>Editor chỉnh sửa thiệp (thêm thông tin, ảnh, chỉnh màu sắc)</li>
+                    <li>Xem trước và tải xuống thiệp</li>
+                    <li>Lưu và quản lý thiệp đã thiết kế</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Quản lý Dịch vụ:</strong>
+                  <strong>Dịch vụ Thiết kế Slide Trình Chiếu:</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Danh sách sản phẩm (Thông tin, ảnh, giá tham khảo)</li>
-                    <li>Chi tiết sản phẩm</li>
-                    <li>Quản lý kho chỗ</li>
+                    <li>Trang chọn mẫu slide</li>
+                    <li>Editor chỉnh sửa slide (thêm nội dung, ảnh, video)</li>
+                    <li>Xem trước và xuất file slide</li>
+                    <li>Lưu và quản lý slide đã thiết kế</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Xác nhận đơn hàng:</strong>
+                  <strong>Quản lý Đơn hàng:</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
-                    <li>Xem lại dịch vụ đã chọn</li>
-                    <li>Form điền thông tin liên hệ</li>
-                    <li>Nhận thông báo "Đặt chỗ thành công"</li>
+                    <li>Xem lại các thiết kế đã đặt</li>
+                    <li>Tải xuống file thiết kế</li>
                   </ul>
                 </li>
                 <li>
                   <strong>Quản lý Khách hàng:</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
                     <li>Đăng ký/Đăng nhập</li>
-                    <li>Xem lại các tour/dịch vụ đã đặt</li>
+                    <li>Xem lại các thiết kế đã tạo</li>
                     <li>Quản lý thông tin cá nhân</li>
+                    <li>Lưu trữ thiết kế yêu thích</li>
                   </ul>
                 </li>
                 <li>
                   <strong>Hệ thống Quản trị:</strong>
                   <ul class="list-disc list-inside ml-6 mt-1 space-y-1">
                     <li>Dashboard thống kê</li>
-                    <li>Quản lý nội dung (CMS)</li>
+                    <li>Quản lý mẫu thiết kế (Thêm/Sửa/Xóa mẫu)</li>
                     <li>Quản lý đơn hàng</li>
+                    <li>Quản lý khách hàng</li>
                     <li>Phân quyền nhân viên</li>
                   </ul>
                 </li>
